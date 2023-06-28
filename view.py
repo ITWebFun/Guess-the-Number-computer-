@@ -1,12 +1,12 @@
 from tkinter import *
-from main import *
+from controller import *
 
 tk = Tk()
 
 canvas = Canvas(tk, width=200, height=10)
 canvas.pack()
 
-label = Label(text="Try to guess the number!")
+label = Label(text="Try to guess the number between 1 and 15!")
 label.pack()
 
 input_field = Entry()
