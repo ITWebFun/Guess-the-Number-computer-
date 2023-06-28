@@ -14,7 +14,7 @@ input_field.pack()
 
 
 def answer_check(x):
-    label = Label(text=guess(x))
+    label = Label(text=guess(int(x)))
     label.pack()
 
 
