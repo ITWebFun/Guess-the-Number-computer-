@@ -1,8 +1,13 @@
 import random
 
+computer_number = random.randint(1, 15)
+
+
 def guess(x):
-    comp_num = random.randint(1,15)
-    if x==comp_num:
-        return 'You guessed it! Bravo!'
+    comp_num = computer_number
+    if x == comp_num:
+        return "You guessed it! Bravo!"
+    elif x<comp_num:
+        return "It is higher!"
     else:
-        return 'Try again!'
+        return "It is lower!"
